@@ -7,15 +7,28 @@ namespace Calculator
     {
         static void Main()
         {
-            // Bu bir qatorli izoh
-            /// Exseptions
-            
-            Console.WriteLine("Hello, World!");
-            Console.WriteLine("Asrorbek. Abdurashidov");
-            Console.WriteLine("2002-yil");
+           Console.WriteLine("Enter numbers:");
+           Console.Write("firstNumber: ");
+                string firstUserValue = Console.ReadLine();
+           Console.Write("secondNumber: ");
+                string secondUserValue = Console.ReadLine();
 
-           Console.ReadLine();
-            
+           Console.WriteLine("Converting nambers in prograss....");
+                decimal firstNumber = Convert.ToDecimal(firstUserValue);
+                decimal secondNumber = Convert.ToDecimal(secondUserValue);
+
+            Console.WriteLine("Here are your resultat...");
+            Console.WriteLine($"{firstNumber} + {secondNumber} =  {firstNumber + secondNumber}");
+            Console.WriteLine($"{firstNumber} - {secondNumber} =  {firstNumber - secondNumber}");
+            Console.WriteLine($"{firstNumber} * {secondNumber} =  {firstNumber * secondNumber}");
+            Console.WriteLine($"{firstNumber} / {secondNumber} =  {firstNumber / secondNumber }");
+            Console.WriteLine($"{firstNumber} % {secondNumber} =  {firstNumber % secondNumber}");
+
+
+
+         
+           
+                        
         }
     }
 }
